@@ -23,8 +23,8 @@ const OpeningPlay = () => {
                     scrollTrigger: {
                         trigger: cluster,
                         start: "top 85%",
-                        end: "bottom 15%",
-                        toggleActions: "play reverse play reverse",
+                        end: "bottom top",
+                        toggleActions: "play none none reverse",
                     }
                 });
             });
@@ -46,16 +46,16 @@ const OpeningPlay = () => {
                         className="w-full h-auto object-contain"
                     />
                 </div>
-                <p className="font-script text-xl md:text-2xl text-black leading-tight max-w-[320px] mt-4 text-center">
-                    THE GAME TRULY KICKED OFF IN THE MOST UNEXPECTED WAY. ESTHER NEEDED A DOCUMENT... AND CALLED OUT "INNOCENT'S NAME" IN A GROUP CHAT THAT RARELY SAW HIS PRESENCE.
+                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[320px] mt-4 text-center font-medium">
+                    The game truly kicked off in the most unexpected way. Esther needed a document... and called out "Innocent's name" in a group chat that rarely saw his presence.
                 </p>
             </div>
 
             {/* Cluster 2: WhatsApp (Left Middle) */}
             <div className="op-cluster relative md:absolute md:top-[600px] md:left-[5%] flex flex-col items-center md:items-start z-20">
-                <p className="font-script text-xl md:text-2xl text-black leading-tight max-w-[300px] mb-4 md:absolute md:-top-24 md:-left-10 text-center md:text-left">
-                    CURIOUS, HE MADE A MOVE — A QUIET DM:<br />
-                    "WHY ARE YOU SCREAMING MY NAME LIKE THAT?"
+                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[300px] mb-4 md:absolute md:-top-24 md:-left-10 text-center md:text-left font-medium">
+                    Curious, he made a move — a quiet DM:<br />
+                    "Why are you screaming my name like that?"
                 </p>
                 <div className="relative w-[85vw] max-w-[22rem] md:w-[22rem]">
                     <img
@@ -68,8 +68,8 @@ const OpeningPlay = () => {
 
             {/* Cluster 3: Chat Bubbles (Right Bottom) */}
             <div className="op-cluster relative md:absolute md:top-[1100px] md:right-[5%] flex flex-col items-center md:items-start z-20">
-                <p className="font-script text-xl md:text-2xl text-black leading-tight max-w-[350px] mb-4 md:absolute md:-top-48 md:-left-20 text-center md:text-left">
-                    THAT SIMPLE MOMENT BECAME THE FIRST PASS OF A LONG, BEAUTIFUL PLAY. MESSAGES TURNED INTO CONVERSATIONS. CONVERSATIONS TURNED INTO FRIENDSHIP. AND BEFORE LONG, TWO INDIVIDUALS REALIZED THEY WEREN'T JUST PLAYING ON THE SAME FIELD, THEY WERE BUILDING A TEAM.
+                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[350px] mb-4 md:absolute md:-top-48 md:-left-20 text-center md:text-left font-medium">
+                    That simple moment became the first pass of a long, beautiful play. Messages turned into conversations. Conversations turned into friendship. And before long, two individuals realized they weren't just playing on the same field, they were building a team.
                 </p>
                 <div className="relative w-[85vw] max-w-[22rem] md:w-[22rem]">
                     <img

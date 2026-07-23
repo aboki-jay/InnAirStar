@@ -24,8 +24,8 @@ const FirstWhistle = () => {
                     scrollTrigger: {
                         trigger: cluster,
                         start: "top 85%", // Trigger when the top of the cluster hits 85% of the viewport (closer to bottom)
-                        end: "bottom 15%", // Trigger leave when bottom of cluster leaves the top 15%
-                        toggleActions: "play reverse play reverse",
+                        end: "bottom top", 
+                        toggleActions: "play none none reverse",
                     }
                 });
             });
@@ -47,15 +47,15 @@ const FirstWhistle = () => {
                         className="w-full h-auto object-contain"
                     />
                 </div>
-                <p className="font-script text-xl md:text-2xl text-black leading-tight max-w-[280px] mt-4 text-center md:text-left">
-                    AS CORPS MEMBERS, WE STEPPED ONTO THE SAME FIELD OF LIFE, UNAWARE THAT FATE HAD SCHEDULED THE MOST BEAUTIFUL GAME OF ALL, US.
+                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[280px] mt-4 text-center md:text-left font-medium">
+                    As corps members, we stepped onto the same field of life, unaware that fate had scheduled the most beautiful game of all, us.
                 </p>
             </div>
 
             {/* Cluster 2 (Center) */}
             <div className="fw-cluster relative md:absolute md:top-[600px] md:left-[45%] flex flex-col items-center md:items-start z-20">
-                <p className="font-script text-xl md:text-2xl text-black leading-tight max-w-[320px] mb-4 md:absolute md:-top-16 md:-left-16 md:w-[350px] text-center md:text-left">
-                    AMONG CROWDS AND ROUTINES, TWO PATHS SLOWLY ALIGNED. IT DIDN'T FEEL LIKE MUCH AT FIRST, JUST ANOTHER PLAYER ON THE PITCH — BUT DESTINY HAD ALREADY MARKED US FOR THE SAME TEAM.
+                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[320px] mb-4 md:absolute md:-top-16 md:-left-16 md:w-[350px] text-center md:text-left font-medium">
+                    Among crowds and routines, two paths slowly aligned. It didn't feel like much at first, just another player on the pitch — but destiny had already marked us for the same team.
                 </p>
                 <div className="relative w-[80vw] max-w-[20rem] md:w-80">
                     <img
@@ -75,8 +75,8 @@ const FirstWhistle = () => {
                         className="w-full h-auto object-contain"
                     />
                 </div>
-                <p className="font-script text-xl md:text-2xl text-black leading-tight max-w-[280px] mt-4 md:absolute md:-bottom-16 md:right-0 md:text-right text-center">
-                    EVERY GREAT MATCH BEGINS WITH A WHISTLE... AND OURS SOUNDED IN 2019, IN THE QUIET TOWN OF T AS CORPS MEMBERS.
+                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[280px] mt-4 md:absolute md:-bottom-16 md:right-0 md:text-right text-center font-medium">
+                    Every great match begins with a whistle... and ours sounded in 2019, in the quiet town of T as corps members.
                 </p>
             </div>
 
