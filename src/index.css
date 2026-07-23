@@ -1,9 +1,58 @@
 @import "tailwindcss";
 
+@theme {
+  --font-display: "Helvetica Now Display", sans-serif;
+  --font-mono: "Reddit Mono", monospace;
+  --font-script: "Comedik", cursive;
+  --font-proxima: "ProximaNovaCondensedBlack", sans-serif;
+}
+
 @font-face {
   font-family: 'ProximaNovaCondensedBlack';
   src: url('/assets/fonts/ProximaNova-CondensedBlack.otf') format('opentype');
   font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/assets/fonts/HelveticaNowDisplayXBlk.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/assets/fonts/HelveticaNowDisplay-CnXLt.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/assets/fonts/HelveticaNowDisplayXBd.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Reddit Mono';
+  src: url('/assets/fonts/RedditMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Reddit Mono';
+  src: url('/assets/fonts/RedditMono-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comedik';
+  src: url('/assets/fonts/66faed7faf21dd1aada0e21c_ComedikRegular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -14,11 +63,5 @@
     overflow-x: hidden;
     background-color: #1C1C1C;
     color: white;
-  }
-}
-
-@layer utilities {
-  .font-proxima {
-    font-family: 'ProximaNovaCondensedBlack', sans-serif;
   }
 }
