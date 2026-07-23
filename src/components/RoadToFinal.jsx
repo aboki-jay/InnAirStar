@@ -9,7 +9,7 @@ const RoadToFinal = () => {
         <section id="our-story" className="relative w-full overflow-hidden bg-[#ADEBB3]"> 
             
             {/* The SVG Path - Positioned absolutely in the background so it flows down the page */}
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
+            <div className="absolute top-0 left-0 w-full h-full pointer-events-none -z-10">
                 <TimelinePath />
             </div>
 

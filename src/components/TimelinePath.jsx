@@ -13,25 +13,32 @@ const TimelinePath = forwardRef((props, externalRef) => {
         const path = pathRef.current;
         if (!path) return;
 
-        const length = path.getTotalLength();
-        
-        // Initial setup to hide the line
-        gsap.set(path, {
-            strokeDasharray: length,
-            strokeDashoffset: length
-        });
+        // Delay the ScrollTrigger creation slightly to ensure ScrollSmoother in App.jsx has initialized first!
+        const timer = setTimeout(() => {
+            const length = path.getTotalLength();
+            
+            // Initial setup to hide the line completely
+            gsap.set(path, {
+                strokeDasharray: length,
+                strokeDashoffset: length
+            });
 
-        // Animate drawing the line on scroll
-        gsap.to(path, {
-            strokeDashoffset: 0,
-            ease: "none",
-            scrollTrigger: {
-                trigger: svgRef.current,
-                start: "top bottom", // start drawing as soon as the top of SVG enters the bottom of the viewport
-                end: "bottom 90%", // finish drawing near the bottom
-                scrub: 1, // smooth scrubbing
-            }
-        });
+            // Animate drawing the line on scroll
+            gsap.to(path, {
+                strokeDashoffset: 0,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: svgRef.current,
+                    start: "top center", // start drawing when it enters the viewport
+                    end: "bottom 90%", // finish drawing near the bottom
+                    scrub: 1, // smooth scrubbing
+                }
+            });
+            
+            ScrollTrigger.refresh();
+        }, 100);
+
+        return () => clearTimeout(timer);
     }, { scope: svgRef });
 
     return (
@@ -43,7 +50,7 @@ const TimelinePath = forwardRef((props, externalRef) => {
             preserveAspectRatio="none"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[889px] h-full z-0"
+            className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[889px] h-full -z-10"
             {...props}
         >
             <path
