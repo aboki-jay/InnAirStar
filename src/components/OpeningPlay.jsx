@@ -9,27 +9,29 @@ const OpeningPlay = () => {
     const containerRef = useRef(null);
 
     useGSAP(() => {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: containerRef.current,
-                start: "top 60%",
-                end: "bottom top",
-                toggleActions: "play none none reverse",
-            }
-        });
-
         const clusters = containerRef.current.querySelectorAll('.op-cluster');
 
-        gsap.set(clusters, { opacity: 0, y: 50 });
+        const timer = setTimeout(() => {
+            gsap.set(clusters, { opacity: 0, y: 50 });
 
-        tl.to(clusters, {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            stagger: 0.3,
-            ease: "power3.out"
-        });
+            clusters.forEach((cluster) => {
+                gsap.to(cluster, {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: cluster,
+                        start: "top 85%",
+                        end: "bottom 15%",
+                        toggleActions: "play reverse play reverse",
+                    }
+                });
+            });
+            ScrollTrigger.refresh();
+        }, 100);
 
+        return () => clearTimeout(timer);
     }, { scope: containerRef });
 
     return (

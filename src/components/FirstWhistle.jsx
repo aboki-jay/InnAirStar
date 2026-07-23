@@ -9,28 +9,30 @@ const FirstWhistle = () => {
     const containerRef = useRef(null);
 
     useGSAP(() => {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: containerRef.current,
-                start: "top 60%",
-                end: "bottom top",
-                toggleActions: "play none none reverse",
-            }
-        });
-
         const clusters = containerRef.current.querySelectorAll('.fw-cluster');
 
-        // Initial setup for the stagger animation
-        gsap.set(clusters, { opacity: 0, y: 50 });
+        // Delay slightly to ensure ScrollSmoother is active before ScrollTriggers are computed
+        const timer = setTimeout(() => {
+            gsap.set(clusters, { opacity: 0, y: 50 });
 
-        tl.to(clusters, {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            stagger: 0.3,
-            ease: "power3.out"
-        });
+            clusters.forEach((cluster) => {
+                gsap.to(cluster, {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: cluster,
+                        start: "top 85%", // Trigger when the top of the cluster hits 85% of the viewport (closer to bottom)
+                        end: "bottom 15%", // Trigger leave when bottom of cluster leaves the top 15%
+                        toggleActions: "play reverse play reverse",
+                    }
+                });
+            });
+            ScrollTrigger.refresh();
+        }, 100);
 
+        return () => clearTimeout(timer);
     }, { scope: containerRef });
 
     return (
