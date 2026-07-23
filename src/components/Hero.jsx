@@ -3,26 +3,13 @@ import { Plus } from 'lucide-react';
 
 const Hero = ({ setMenuOpen }) => {
   return (
-    <div className="min-h-screen w-full relative overflow-hidden flex flex-col justify-between p-4 md:p-12 bg-[url('/assets/images/homepage-bg.jpg')] bg-cover bg-center bg-no-repeat">
+    <div id="hero" className="min-h-screen w-full relative overflow-hidden flex flex-col justify-between p-4 md:p-12 bg-[url('/assets/images/homepage-bg.jpg')] bg-cover bg-center bg-no-repeat">
       
-      {/* Header Navigation */}
-      <div className="flex justify-between items-center z-20 w-full">
-        {/* Left SVG Badge */}
-        <img 
-          src="/assets/svgs/top-navigation.svg" 
-          alt="Top Navigation" 
-          className="h-16 sm:h-20 md:h-28 w-auto object-contain" 
-        />
+      {/* Spacer to maintain flex layout since nav is moved to TopNav outside smooth-wrapper */}
+      <div className="h-16 sm:h-20 md:h-28 w-full shrink-0"></div>
 
-        {/* Right Button */}
-        <button 
-          onClick={() => setMenuOpen(true)}
-          className="flex items-center justify-center text-white font-display font-extrabold uppercase bg-black/40 border border-white px-3 py-1.5 gap-2 text-sm sm:text-lg md:px-[16px] md:py-[12px] md:gap-[12px] rounded-full md:text-[34px] md:leading-[30px] backdrop-blur-md hover:bg-white hover:text-black transition-all shrink-0"
-        >
-          <span>MENU</span>
-          <Plus className="w-4 h-4 sm:w-5 sm:h-5 md:w-[34px] md:h-[34px]" strokeWidth={3} />
-        </button>
-      </div>
+      {/* Spacer to maintain flex layout since nav is fixed */}
+      <div className="h-16 sm:h-20 md:h-28 w-full shrink-0"></div>
 
       {/* Hero Title */}
       <div className="flex flex-col items-center justify-center my-auto py-8 z-10 w-full">

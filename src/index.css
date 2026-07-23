@@ -23,6 +23,13 @@
 
 @font-face {
   font-family: 'Helvetica Now Display';
+  src: url('/assets/fonts/HelveticaNowDisplay.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
   src: url('/assets/fonts/HelveticaNowDisplay-CnXLt.otf') format('opentype');
   font-weight: 200;
   font-style: normal;

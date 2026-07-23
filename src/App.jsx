@@ -5,6 +5,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import Hero from './components/Hero';
 import Navigation from './components/Navigation';
+import RoadToFinal from './components/RoadToFinal';
+import TopNav from './components/TopNav';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 
@@ -24,6 +26,7 @@ function App() {
     <>
       {/* Portal root for fixed elements like navigation */}
       <div id="portal-root" className="relative z-50">
+        <TopNav setMenuOpen={setMenuOpen} />
         <Navigation isOpen={isMenuOpen} setMenuOpen={setMenuOpen} />
       </div>
       
@@ -31,6 +34,7 @@ function App() {
         <div id="smooth-content">
           <main className="w-full bg-[#0A0A0A]">
             <Hero setMenuOpen={setMenuOpen} />
+            <RoadToFinal />
           </main>
         </div>
       </div>
