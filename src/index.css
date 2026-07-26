@@ -79,4 +79,34 @@
     background-color: #1C1C1C;
     color: white;
   }
+
+  @keyframes arcSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes arcCounterSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+  }
+
+  .arc-tile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--tile-size, 96px);
+    height: var(--tile-size, 96px);
+    transform: 
+      translate(-50%, -50%)
+      translate(
+        calc(var(--cos) * var(--radius)),
+        calc(var(--sin) * var(--radius))
+      );
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .arc-composition, .arc-portrait {
+      animation: none !important;
+    }
+  }
 }
