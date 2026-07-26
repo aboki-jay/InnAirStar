@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import Navigation from './components/Navigation';
 import RoadToFinal from './components/RoadToFinal';
 import CircularGallery from './components/CircularGallery';
+import MatchDayAndSchedule from './components/MatchDayAndSchedule';
 import TopNav from './components/TopNav';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
@@ -37,6 +38,7 @@ function App() {
             <Hero setMenuOpen={setMenuOpen} />
             <RoadToFinal />
             <CircularGallery />
+            <MatchDayAndSchedule />
           </main>
         </div>
       </div>

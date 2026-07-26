@@ -6,11 +6,20 @@
   --font-script: "Comedik", cursive;
   --font-proxima: "ProximaNovaCondensedBlack", sans-serif;
   --font-vultures: "Taken by Vultures Alternates Demo", cursive;
+  --font-helvetica-cnblk: "Helvetica Now Display CnBlk", sans-serif;
+  --drop-shadow-stamp: 0px 20px 30px rgba(0, 0, 0, 0.25), 0px 8px 12px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @font-face {
   font-family: 'ProximaNovaCondensedBlack';
   src: url('/assets/fonts/ProximaNova-CondensedBlack.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display CnBlk';
+  src: url('/assets/fonts/HelveticaNowDisplay-CnBlk.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
 }
