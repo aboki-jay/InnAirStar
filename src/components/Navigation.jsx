@@ -25,7 +25,7 @@ const linksConfig = [
   },
   {
     text: "HOME GROUND",
-    href: "#",
+    href: "#accommodations",
     images: [
       { src: "/assets/images/home-ground-hover-1.png", position: "top-[60%] left-[15%] rotate-6 hidden md:block" },
       { src: "/assets/images/home-ground-hover-2.png", position: "top-[55%] left-1/2 -translate-x-1/2 -rotate-3 hidden md:block" },
@@ -34,7 +34,7 @@ const linksConfig = [
   },
   {
     text: "MATCHDAY INFO",
-    href: "#",
+    href: "#matchday",
     images: [
       { src: "/assets/images/matchday-info-hover-1.png", position: "bottom-[15%] left-[20%] -rotate-6 hidden md:block" },
       { src: "/assets/images/matchday-info-hover-2.png", position: "bottom-[5%] left-1/2 -translate-x-1/2 rotate-3 hidden md:block" },

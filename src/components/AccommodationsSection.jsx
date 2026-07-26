@@ -1,11 +1,54 @@
-export default function AccommodationsSection() {
-    return (
-        <section className="w-full bg-white py-[7.4375rem] px-6 md:px-[6.25rem] flex justify-center items-center">
-            <div className="w-full max-w-7xl mx-auto flex flex-col gap-12">
+// Triggering HMR
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 
+gsap.registerPlugin(ScrollTrigger);
+
+export default function AccommodationsSection() {
+    const sectionRef = useRef(null);
+    const headerRef = useRef(null);
+    const cardsRef = useRef([]);
+
+    useGSAP(() => {
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: sectionRef.current,
+                start: "top 75%",
+                end: "top 25%",
+                scrub: 1,
+            }
+        });
+
+        // 1. Fade and slide in the header area
+        tl.fromTo(headerRef.current, 
+            { y: 40, opacity: 0 }, 
+            { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }
+        );
+
+        // 2. Staggered reveal for the hotel cards
+        tl.fromTo(cardsRef.current, 
+            { y: 60, opacity: 0, scale: 0.96 }, 
+            { y: 0, opacity: 1, scale: 1, duration: 0.7, stagger: 0.2, ease: "power2.out" },
+            0.1
+        );
+    }, { scope: sectionRef });
+
+    return (
+        <section 
+            id="accommodations"
+            ref={sectionRef} 
+            className="w-full bg-white py-[7.4375rem] px-6 md:px-[6.25rem] flex justify-center items-center"
+        >
+            <div className="w-full max-w-7xl mx-auto flex flex-col gap-12">
+                
                 {/* Header Section */}
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full gap-6">
-                    <h2 className="text-4xl md:text-5xl font-bold text-black tracking-tight">
+                <div 
+                    ref={headerRef} 
+                    className="flex flex-col md:flex-row justify-between items-start md:items-center w-full gap-6"
+                >
+                    <h2 className="font-display font-normal text-black text-[2rem] leading-[2.125rem] tracking-[-0.06rem] md:text-[4rem] md:leading-[4.125rem] md:tracking-[-0.12rem]">
                         Where to Stay
                     </h2>
                     <p className="text-sm md:text-base text-gray-500 max-w-xs text-left md:text-right">
@@ -38,19 +81,20 @@ export default function AccommodationsSection() {
                             image: "/assets/images/hotel-3.jpg"
                         }
                     ].map((hotel, index) => (
-                        <div
+                        <div 
                             key={index}
+                            ref={el => cardsRef.current[index] = el}
                             className="flex flex-col items-start rounded-[1.5rem] border border-[#E9EAEC] bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                         >
                             {/* Thumbnail Container */}
-                            <div
+                            <div 
                                 className="h-[11.75rem] w-full bg-center bg-cover bg-no-repeat bg-[#222327]"
                                 style={{ backgroundImage: `url('${hotel.image}')` }}
                             />
 
                             {/* Card Body */}
                             <div className="flex p-[0.875rem_1rem] flex-col items-start gap-[1rem] w-full bg-white">
-
+                                
                                 {/* Title & Price Row */}
                                 <div className="w-full flex justify-between items-center">
                                     <h3 className="font-semibold text-black text-lg">{hotel.name}</h3>
@@ -72,9 +116,14 @@ export default function AccommodationsSection() {
                                 </div>
 
                                 {/* Reservation Button */}
-                                <button className="w-full py-2.5 px-4 rounded-xl border border-[#E9EAEC] text-black font-medium text-sm hover:bg-gray-50 transition-colors mt-1">
+                                <a 
+                                    href={`https://wa.me/2348081925198?text=${encodeURIComponent(`Hello Mercy can you make a reservation for ${hotel.name}`)}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full py-2.5 px-4 rounded-xl border border-[#E9EAEC] text-black font-medium text-sm text-center hover:bg-gray-50 transition-colors mt-1 block"
+                                >
                                     Make a Reservation
-                                </button>
+                                </a>
                             </div>
                         </div>
                     ))}

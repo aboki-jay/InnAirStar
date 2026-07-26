@@ -8,6 +8,7 @@ import Navigation from './components/Navigation';
 import RoadToFinal from './components/RoadToFinal';
 import CircularGallery from './components/CircularGallery';
 import MatchDayAndSchedule from './components/MatchDayAndSchedule';
+import AccommodationsSection from './components/AccommodationsSection';
 import TopNav from './components/TopNav';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
@@ -39,6 +40,7 @@ function App() {
             <RoadToFinal />
             <CircularGallery />
             <MatchDayAndSchedule />
+            <AccommodationsSection />
           </main>
         </div>
       </div>
