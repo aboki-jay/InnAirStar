@@ -11,6 +11,7 @@ export default {
                 mono: ['RedditMono', 'monospace'],
                 script: ['ComedikScript', 'cursive'],
                 helvetica: ['HelveticaNow', 'sans-serif'],
+                vultures: ['"Taken by Vultures Alternates Demo"', 'cursive'],
             },
         },
     },

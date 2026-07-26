@@ -30,7 +30,7 @@ const TimelinePath = forwardRef((props, externalRef) => {
                 scrollTrigger: {
                     trigger: svgRef.current,
                     start: "top center", // start drawing when it enters the viewport
-                    end: "bottom 90%", // finish drawing near the bottom
+                    end: "bottom bottom", // finish drawing right as user hits the bottom
                     scrub: 1, // smooth scrubbing
                 }
             });
@@ -45,8 +45,8 @@ const TimelinePath = forwardRef((props, externalRef) => {
         <svg
             ref={svgRef}
             width="889"
-            height="4416"
-            viewBox="0 0 889 4416"
+            height="4650"
+            viewBox="0 0 889 4650"
             preserveAspectRatio="none"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

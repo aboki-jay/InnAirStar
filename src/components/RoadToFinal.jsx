@@ -1,6 +1,9 @@
 import TimelinePath from './TimelinePath';
 import FirstWhistle from './FirstWhistle';
 import OpeningPlay from './OpeningPlay';
+import TheAssist from './TheAssist';
+import TheWinningGoal from './TheWinningGoal';
+import TheFinal from './TheFinal';
 
 const RoadToFinal = () => {
     return (
@@ -29,9 +32,14 @@ const RoadToFinal = () => {
                 {/* Milestone 2 */}
                 <OpeningPlay />
 
-                {/* Future milestones will go here... */}
-                {/* <SecondWhistle /> */}
-                {/* <ThirdWhistle /> */}
+                {/* Milestone 3 */}
+                <TheAssist />
+
+                {/* Milestone 4 */}
+                <TheWinningGoal />
+
+                {/* Milestone 5 */}
+                <TheFinal />
 
             </div>
             

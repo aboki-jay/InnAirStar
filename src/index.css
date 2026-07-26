@@ -5,6 +5,7 @@
   --font-mono: "Reddit Mono", monospace;
   --font-script: "Comedik", cursive;
   --font-proxima: "ProximaNovaCondensedBlack", sans-serif;
+  --font-vultures: "Taken by Vultures Alternates Demo", cursive;
 }
 
 @font-face {
@@ -59,6 +60,13 @@
 @font-face {
   font-family: 'Comedik';
   src: url('/assets/fonts/66faed7faf21dd1aada0e21c_ComedikRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Taken by Vultures Alternates Demo';
+  src: url('/assets/fonts/Taken by Vultures Alternates Demo.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }

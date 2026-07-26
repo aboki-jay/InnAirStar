@@ -36,7 +36,7 @@ const FirstWhistle = () => {
     }, { scope: containerRef });
 
     return (
-        <div ref={containerRef} className="relative w-full max-w-6xl mx-auto min-h-screen py-24 md:py-32 px-4 md:px-8 z-10 flex flex-col gap-32 md:h-[1700px] md:block">
+        <div ref={containerRef} className="relative w-full max-w-6xl mx-auto min-h-screen py-24 md:py-32 px-4 md:px-8 z-10 flex flex-col gap-16 md:h-[1700px] md:block">
 
             {/* Cluster 1 (Left Side) */}
             <div className="fw-cluster relative md:absolute md:top-48 md:left-[10%] flex flex-col items-center md:items-start z-20">
