@@ -58,7 +58,7 @@ const TheFinal = () => {
     const hoverOpacityClasses = isMobile ? (showHover ? 'opacity-100' : 'opacity-0') : 'opacity-0 group-hover:opacity-100';
 
     return (
-        <div ref={containerRef} className="relative w-full max-w-6xl mx-auto min-h-[50vh] pt-4 pb-24 md:py-32 px-4 md:px-8 z-10 flex flex-col gap-16 md:h-[1200px] md:block mt-8 md:mt-20 mb-32">
+        <div ref={containerRef} className="relative w-full max-w-6xl mx-auto min-h-[50vh] pt-4 pb-8 md:py-32 px-4 md:px-8 z-10 flex flex-col gap-16 md:h-[1200px] md:block mt-8 md:mt-20 mb-8 md:mb-32">
 
             {/* Main Center Cluster for Polaroids and Text */}
             <div className="tf-cluster relative md:absolute md:top-10 md:left-[10%] w-full md:w-[80%] flex flex-col items-center z-20">

@@ -1,8 +1,6 @@
 import TimelinePath from './TimelinePath';
 import FirstWhistle from './FirstWhistle';
 import OpeningPlay from './OpeningPlay';
-import TheAssist from './TheAssist';
-import TheWinningGoal from './TheWinningGoal';
 import TheFinal from './TheFinal';
 
 const RoadToFinal = () => {
@@ -18,7 +16,7 @@ const RoadToFinal = () => {
 
             {/* The Timeline Components - Stacked on top of the path */}
             {/* We wrap them in a relative container with z-10 so they are clickable and visible over the path */}
-            <div className="relative z-10 pt-20 pb-40">
+            <div className="relative z-10 pt-20 pb-12">
                 
                 {/* Section Header */}
                 <div className="text-center w-full max-w-7xl mx-auto px-4 pt-10">
@@ -33,12 +31,6 @@ const RoadToFinal = () => {
                 <OpeningPlay />
 
                 {/* Milestone 3 */}
-                <TheAssist />
-
-                {/* Milestone 4 */}
-                <TheWinningGoal />
-
-                {/* Milestone 5 */}
                 <TheFinal />
 
             </div>
