@@ -9,6 +9,9 @@ import RoadToFinal from './components/RoadToFinal';
 import CircularGallery from './components/CircularGallery';
 import MatchDayAndSchedule from './components/MatchDayAndSchedule';
 import AccommodationsSection from './components/AccommodationsSection';
+import FanSupportSection from './components/FanSupportSection';
+import CountdownSection from './components/CountdownSection';
+import FooterSection from './components/FooterSection';
 import TopNav from './components/TopNav';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
@@ -41,6 +44,9 @@ function App() {
             <CircularGallery />
             <MatchDayAndSchedule />
             <AccommodationsSection />
+            <FanSupportSection />
+            <CountdownSection />
+            <FooterSection />
           </main>
         </div>
       </div>

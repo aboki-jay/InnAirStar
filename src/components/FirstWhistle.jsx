@@ -54,9 +54,6 @@ const FirstWhistle = () => {
 
             {/* Cluster 2 (Center) */}
             <div className="fw-cluster relative md:absolute md:top-[600px] md:left-[45%] flex flex-col items-center md:items-start z-20">
-                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[320px] mb-4 md:absolute md:-top-16 md:-left-16 md:w-[350px] text-center md:text-left font-medium">
-                    Among crowds and routines, two paths slowly aligned. It didn't feel like much at first, just another player on the pitch — but destiny had already marked us for the same team.
-                </p>
                 <div className="relative w-[80vw] max-w-[20rem] md:w-80">
                     <img
                         src="/assets/images/group-10.png"
@@ -64,6 +61,9 @@ const FirstWhistle = () => {
                         className="w-full h-auto object-contain"
                     />
                 </div>
+                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[320px] mt-4 md:w-[350px] text-center font-medium">
+                    Among crowds and routines, two paths slowly aligned. It didn't feel like much at first, just another player on the pitch — but destiny had already marked us for the same team.
+                </p>
             </div>
 
             {/* Cluster 3 (Bottom Right) */}
@@ -75,8 +75,8 @@ const FirstWhistle = () => {
                         className="w-full h-auto object-contain"
                     />
                 </div>
-                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[280px] mt-4 md:absolute md:-bottom-16 md:right-0 md:text-right text-center font-medium">
-                    Every great match begins with a whistle... and ours sounded in 2019, in the quiet town of T as corps members.
+                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[280px] mt-4 md:absolute md:-bottom-24 md:right-0 md:text-right text-center font-medium">
+                    Every great match begins with a whistle, and ours sounded in 2019 in Osun as Corp members.
                 </p>
             </div>
 

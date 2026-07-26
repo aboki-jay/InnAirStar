@@ -3,7 +3,7 @@ import { Plus } from 'lucide-react';
 
 const TopNav = ({ setMenuOpen }) => {
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-between items-start z-[60] w-full p-4 md:p-12 pointer-events-none">
+    <div className="fixed top-0 left-0 right-0 flex justify-between items-center z-[60] w-full p-4 md:p-12 pointer-events-none">
       <img 
         src="/assets/svgs/top-navigation.svg" 
         alt="Top Navigation" 

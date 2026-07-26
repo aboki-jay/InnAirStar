@@ -43,7 +43,7 @@ const linksConfig = [
   },
   {
     text: "FAN SUPPORT",
-    href: "#",
+    href: "#fan-support",
     images: []
   }
 ];
@@ -181,7 +181,7 @@ const Navigation = ({ isOpen, setMenuOpen }) => {
       {/* Footer Tag */}
       <div className="flex justify-center items-end relative z-10 w-full pb-4">
         <span className="text-white font-display font-bold text-lg md:text-2xl uppercase tracking-widest opacity-80">
-          #INNESTA2026
+          #Innyairstar26
         </span>
       </div>
     </div>

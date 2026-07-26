@@ -37,30 +37,30 @@ const OpeningPlay = () => {
     return (
         <div ref={containerRef} className="relative w-full max-w-6xl mx-auto min-h-screen py-24 md:py-32 px-4 md:px-8 z-10 flex flex-col gap-16 md:h-[1800px] md:block mt-20">
 
-            {/* Cluster 1: Soccer Field (Center Top) */}
+            {/* Cluster 1: WhatsApp (Center Top) */}
             <div className="op-cluster relative md:absolute md:top-10 md:left-[35%] flex flex-col items-center z-20">
                 <div className="relative w-[85vw] max-w-[22rem] md:w-[22rem]">
                     <img
                         src="/assets/images/group-12.png"
-                        alt="Soccer Field"
+                        alt="WhatsApp DM"
                         className="w-full h-auto object-contain"
                     />
                 </div>
-                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[320px] mt-4 text-center font-medium">
-                    The game truly kicked off in the most unexpected way. Esther needed a document... and called out "Innocent's name" in a group chat that rarely saw his presence.
+                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[300px] mt-4 text-center font-medium">
+                    Curious, he made a move — a quiet DM:<br />
+                    "Why are you screaming my name like that?"
                 </p>
             </div>
 
-            {/* Cluster 2: WhatsApp (Left Middle) */}
+            {/* Cluster 2: Soccer Field (Left Middle) */}
             <div className="op-cluster relative md:absolute md:top-[600px] md:left-[5%] flex flex-col items-center md:items-start z-20">
-                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[300px] mb-4 md:absolute md:-top-24 md:-left-10 text-center md:text-left font-medium">
-                    Curious, he made a move — a quiet DM:<br />
-                    "Why are you screaming my name like that?"
+                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[320px] mb-4 md:absolute md:-top-24 md:-left-10 text-center md:text-left font-medium">
+                    The game truly kicked off in the most unexpected way. Esther needed a document... and called out "Innocent's name" in a group chat that rarely saw his presence.
                 </p>
                 <div className="relative w-[85vw] max-w-[22rem] md:w-[22rem]">
                     <img
                         src="/assets/images/group-13.png"
-                        alt="WhatsApp DM"
+                        alt="Soccer Field"
                         className="w-full h-auto object-contain"
                     />
                 </div>

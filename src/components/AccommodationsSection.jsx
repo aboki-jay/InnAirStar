@@ -120,7 +120,7 @@ export default function AccommodationsSection() {
                                     href={`https://wa.me/2348081925198?text=${encodeURIComponent(`Hello Mercy can you make a reservation for ${hotel.name}`)}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-full py-2.5 px-4 rounded-xl border border-[#E9EAEC] text-black font-medium text-sm text-center hover:bg-gray-50 transition-colors mt-1 block"
+                                    className="w-full py-2.5 px-4 rounded-xl border border-[#E9EAEC] text-black font-medium text-sm text-center hover:bg-gray-50 transition active:scale-[0.96] mt-1 block"
                                 >
                                     Make a Reservation
                                 </a>

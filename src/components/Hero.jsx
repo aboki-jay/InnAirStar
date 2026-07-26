@@ -5,9 +5,6 @@ const Hero = ({ setMenuOpen }) => {
   return (
     <div id="hero" className="min-h-screen w-full relative overflow-hidden flex flex-col justify-between p-4 md:p-12 bg-[url('/assets/images/homepage-bg.jpg')] bg-cover bg-center bg-no-repeat">
       
-      {/* Spacer to maintain flex layout since nav is moved to TopNav outside smooth-wrapper */}
-      <div className="h-16 sm:h-20 md:h-28 w-full shrink-0"></div>
-
       {/* Spacer to maintain flex layout since nav is fixed */}
       <div className="h-16 sm:h-20 md:h-28 w-full shrink-0"></div>
 
@@ -49,9 +46,9 @@ const Hero = ({ setMenuOpen }) => {
         </div>
 
         {/* Right Column */}
-        <div className="flex flex-col text-white md:text-right w-full md:w-auto">
-          <span className="text-white font-display font-black text-xl sm:text-2xl md:text-[48px] md:leading-[48px] uppercase">SATURDAY 21</span>
-          <span className="text-white font-display font-black text-xl sm:text-2xl md:text-[48px] md:leading-[48px] uppercase">NOVEMBER 2026</span>
+        <div className="flex flex-col text-white text-left md:text-right w-full md:w-auto mt-4 md:mt-0">
+          <span className="text-white font-mono font-bold text-2xl sm:text-3xl md:text-[3rem] md:leading-[2.4375rem] md:tracking-[-0.03rem] uppercase">SATURDAY 21</span>
+          <span className="text-white font-mono font-bold text-2xl sm:text-3xl md:text-[3rem] md:leading-[2.4375rem] md:tracking-[-0.03rem] uppercase">NOVEMBER 2026</span>
         </div>
       </div>
     </div>
