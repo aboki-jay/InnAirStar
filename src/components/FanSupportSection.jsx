@@ -27,13 +27,13 @@ export default function FanSupportSection() {
     return (
         <section id="fan-support" className="relative w-full min-h-screen bg-[#FDFBF7] md:bg-[#FCF6F0] py-16 px-6 md:px-0 flex items-center justify-center overflow-hidden">
             <div 
-                className="relative w-full max-w-5xl md:max-w-none md:w-[77.5rem] md:h-[57.5rem] md:aspect-[31/23] md:rounded-[2rem] md:bg-[#FCF6F0] flex flex-col md:flex-row items-center justify-between md:justify-end py-8 md:py-0 md:pr-[8rem] bg-none md:bg-[url('/assets/images/transfer-gift-bg.png')] bg-cover bg-center md:overflow-hidden"
+                className="relative w-full max-w-5xl md:max-w-[77.5rem] md:aspect-[31/23] md:rounded-[2rem] md:bg-[#FCF6F0] flex flex-col md:flex-row items-center justify-between md:justify-end py-8 md:py-0 md:pr-[8rem] bg-none md:bg-[url('/assets/images/transfer-gift-bg.png')] bg-contain bg-no-repeat bg-center md:overflow-hidden mx-auto"
             >
                 {/* Content Container */}
                 <div className="w-full md:w-[38.125rem] flex flex-col items-start md:items-end gap-8 md:gap-[0.75rem] z-10 bg-transparent p-0">
                     
                     {/* Header Copy */}
-                    <div className="flex flex-col items-start md:items-end gap-4 md:gap-[0.75rem] w-full">
+                    <div className="flex flex-col items-start md:items-end gap-4 md:gap-[0.75rem] w-full md:pb-12">
                         <h2 className="text-[#26483E] text-[1.97619rem] leading-[1.97619rem] tracking-[-0.01975rem] font-display font-normal text-left md:text-right md:text-[3rem] md:leading-[3rem] md:tracking-[-0.03rem] self-stretch">
                             The &apos;transfer&apos; window is officially open!
                         </h2>

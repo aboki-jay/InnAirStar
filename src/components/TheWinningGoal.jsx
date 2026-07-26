@@ -35,7 +35,7 @@ const TheWinningGoal = () => {
     }, { scope: containerRef });
 
     return (
-        <div ref={containerRef} className="relative w-full max-w-6xl mx-auto min-h-screen py-24 md:py-32 px-4 md:px-8 z-10 flex flex-col gap-16 md:h-[1800px] md:block mt-20">
+        <div ref={containerRef} className="relative w-full max-w-6xl mx-auto min-h-[50vh] pt-24 pb-8 md:py-32 px-4 md:px-8 z-10 flex flex-col gap-16 md:h-[1800px] md:block mt-20">
 
             {/* Cluster 1: Tactic Board (Center Top) */}
             <div className="twg-cluster relative md:absolute md:top-10 md:left-[45%] flex flex-col items-center z-20">

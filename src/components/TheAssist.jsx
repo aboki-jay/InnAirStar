@@ -53,10 +53,6 @@ const TheAssist = () => {
 
             {/* Cluster 2: NCCF (Center) */}
             <div className="ta-cluster relative md:absolute md:top-[600px] md:left-[35%] flex flex-col items-center md:items-start z-20">
-                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[350px] mb-4 md:absolute md:-top-32 md:-right-10 text-center md:text-left font-medium">
-                    One day, Esther came to charge her phone at the NCCF house. At the same time, a key player entered the game. He mentioned casually:<br />
-                    "There's a new corper in your school... you should come meet her."
-                </p>
                 <div className="relative w-[85vw] max-w-[22rem] md:w-[22rem]">
                     <img
                         src="/assets/images/group-16.png"
@@ -64,6 +60,10 @@ const TheAssist = () => {
                         className="w-full h-auto object-contain"
                     />
                 </div>
+                <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[350px] mt-4 md:absolute md:-top-32 md:-right-10 text-center md:text-left font-medium">
+                    One day, Esther came to charge her phone at the NCCF house. At the same time, a key player entered the game. He mentioned casually:<br />
+                    "There's a new corper in your school... you should come meet her."
+                </p>
             </div>
 
             {/* Cluster 3: Goal (Right Bottom) */}

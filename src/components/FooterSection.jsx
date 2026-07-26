@@ -25,7 +25,7 @@ export default function FooterSection() {
                     </div>
 
                     {/* Main Thank You Headline */}
-                    <h2 className="font-display font-black text-[#1A2E22] uppercase tracking-[-0.03em] text-[5.5vw] sm:text-[4.5vw] md:text-[4rem] lg:text-[6rem] leading-[0.95] md:leading-[1] lg:leading-[5.5rem] w-full max-w-4xl -mt-1 md:-mt-4 lg:-mt-6">
+                    <h2 className="font-helvetica font-bold text-[#66997F] text-center uppercase text-[8vw] md:text-[7.5rem] leading-[1.38] md:leading-[10.4rem] w-full max-w-7xl -mt-1 md:-mt-4 lg:-mt-6">
                         THANK YOU FOR BEING A PART OF OUR STORY.
                     </h2>
                 </div>
