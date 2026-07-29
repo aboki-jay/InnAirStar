@@ -68,14 +68,14 @@ export default function AccommodationsSection() {
                         },
                         {
                             name: "Rockville shortlet",
-                            price: "₦30,000",
+                            price: "₦45,000",
                             rating: "4.5",
                             address: "Tresure close, Hand of Fire Bus stop, Igando Road, Lagos",
                             image: "/assets/images/hotel-2.webp"
                         },
                         {
                             name: "Kabis International Hotel",
-                            price: "₦45,000",
+                            price: "₦30,000",
                             rating: "4.5",
                             address: "1 Arowojobe street, college bus Igando lasu ojo road",
                             image: "/assets/images/hotel-3.jpg"

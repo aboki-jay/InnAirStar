@@ -80,15 +80,7 @@ const OpeningPlay = () => {
                 </div>
             </div>
 
-            {/* Title at the bottom of the milestone */}
-            <div className="op-cluster relative md:absolute md:top-[1600px] md:left-[5%] text-center md:text-left z-20">
-                <h2 className="font-display font-normal text-4xl md:text-6xl text-black/80 leading-none tracking-tight uppercase">
-                    OPENING <br className="hidden md:block" /> PLAY
-                </h2>
-                <p className="font-mono text-sm md:text-base tracking-widest text-black/50 uppercase mt-4">
-                    HOW IT ALL STARTED
-                </p>
-            </div>
+
 
         </div>
     );

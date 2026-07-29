@@ -129,7 +129,7 @@ const CircularGallery = () => {
                         A perfect match
                     </p>
                     <p className="font-vultures text-2xl md:text-5xl text-black mt-1">
-                        innysandstar
+                        Inny&amp;airstar
                     </p>
                 </div>
             </div>

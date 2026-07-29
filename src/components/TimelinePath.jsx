@@ -50,7 +50,7 @@ const TimelinePath = forwardRef((props, externalRef) => {
             preserveAspectRatio="none"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[889px] h-full z-0"
+            className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[889px] h-full z-0 overflow-visible"
             {...props}
         >
             <path

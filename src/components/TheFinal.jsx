@@ -107,15 +107,7 @@ const TheFinal = () => {
                 </p>
             </div>
 
-            {/* Title at the bottom of the milestone */}
-            <div className="tf-cluster relative md:absolute md:top-[800px] md:left-[10%] text-center md:text-left z-20">
-                <h2 className="font-display font-normal text-4xl md:text-6xl text-black/80 leading-none tracking-tight uppercase">
-                    THE <br className="hidden md:block" /> FINAL
-                </h2>
-                <p className="font-mono text-sm md:text-base tracking-widest text-black/50 uppercase mt-4">
-                    THE WEDDING
-                </p>
-            </div>
+
 
         </div>
     );

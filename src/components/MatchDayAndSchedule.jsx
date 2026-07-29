@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function MatchDayAndSchedule() {
     const sectionRef = useRef(null);
     const maskRef = useRef(null);
+    const bgRef = useRef(null);
     const matchDayRef = useRef(null);
     const scheduleRef = useRef(null);
     const cardsRef = useRef([]);
@@ -26,9 +27,13 @@ export default function MatchDayAndSchedule() {
 
         // 1. Stamp expansion (Happens immediately on scroll start)
         tl.to(maskRef.current, {
-            "--mask-size": "5000px",
+            scale: 25,
             ease: "power2.inOut",
-            duration: 0.8
+            duration: 0.8,
+            onUpdate: function() {
+                const currentScale = gsap.getProperty(maskRef.current, "scale");
+                gsap.set(bgRef.current, { scale: 1 / currentScale });
+            }
         }, 0);
 
         // 2. Match Day text entry
@@ -65,23 +70,31 @@ export default function MatchDayAndSchedule() {
             <div className="absolute inset-0 h-full w-full flex items-center justify-center overflow-hidden">
 
                 {/* Persistent Stadium Background with Stamp Mask */}
-                <div className="absolute inset-0 flex items-center justify-center z-10">
+                <div className="absolute inset-0 flex items-center justify-center z-10 overflow-hidden">
                     <div
                         ref={maskRef}
-                        className="w-full h-full bg-center bg-cover bg-no-repeat bg-white"
+                        className="w-full h-full flex items-center justify-center"
                         style={{
-                            backgroundImage: "url('/assets/images/match-stadium-bg.jpg')",
                             WebkitMaskImage: "url('/assets/svgs/stamp-mask.svg')",
                             maskImage: "url('/assets/svgs/stamp-mask.svg')",
                             WebkitMaskPosition: "center",
                             maskPosition: "center",
                             WebkitMaskRepeat: "no-repeat",
                             maskRepeat: "no-repeat",
-                            WebkitMaskSize: "var(--mask-size, 280px)",
-                            maskSize: "var(--mask-size, 280px)",
-                            "--mask-size": "280px"
+                            WebkitMaskSize: "280px",
+                            maskSize: "280px",
+                            transformOrigin: "center center"
                         }}
-                    />
+                    >
+                        <div
+                            ref={bgRef}
+                            className="w-full h-full bg-center bg-cover bg-no-repeat bg-white"
+                            style={{
+                                backgroundImage: "url('/assets/images/match-stadium-bg.jpg')",
+                                transformOrigin: "center center"
+                            }}
+                        />
+                    </div>
                 </div>
 
                 {/* Layer 1: Match Day Typography */}
