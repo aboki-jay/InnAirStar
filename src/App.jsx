@@ -42,9 +42,9 @@ function App() {
             <Hero setMenuOpen={setMenuOpen} />
             <RoadToFinal />
             <CircularGallery />
+            <FanSupportSection />
             <MatchDayAndSchedule />
             <AccommodationsSection />
-            <FanSupportSection />
             <CountdownSection />
             <FooterSection />
           </main>

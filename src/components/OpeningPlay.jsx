@@ -47,8 +47,7 @@ const OpeningPlay = () => {
                     />
                 </div>
                 <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[300px] mt-4 text-center font-medium">
-                    Curious, he made a move — a quiet DM:<br />
-                    "Why are you screaming my name like that?"
+                    Curious, he made a move — a quiet DM.
                 </p>
             </div>
 
