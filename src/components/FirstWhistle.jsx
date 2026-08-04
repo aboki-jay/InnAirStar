@@ -76,7 +76,7 @@ const FirstWhistle = () => {
                     />
                 </div>
                 <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[280px] mt-4 md:absolute md:-bottom-24 md:right-0 md:text-right text-center font-medium">
-                    Every great match begins with a whistle, and ours sounded in 2019 in Osun as Corp members.
+                    Every great match begins with a whistle, and ours sounded in Osun as Corp members.
                 </p>
             </div>
 
