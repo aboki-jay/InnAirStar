@@ -79,6 +79,13 @@ export default function AccommodationsSection() {
                             rating: "4.5",
                             address: "1 Arowojobe street, college bus Igando lasu ojo road",
                             image: "/assets/images/hotel-3.jpg"
+                        },
+                        {
+                            name: "DE BUOYANCY HOTEL",
+                            price: "₦35,000",
+                            rating: "4.5",
+                            address: "45, Ifelodun st, Agric Road chemist Bus Stop, Igando Phase 2, Lagos, Nigeria",
+                            image: "/assets/images/hotel-4.jpg"
                         }
                     ].map((hotel, index) => (
                         <div 
