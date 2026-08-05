@@ -54,7 +54,7 @@ const OpeningPlay = () => {
             {/* Cluster 2: Soccer Field (Left Middle) */}
             <div className="op-cluster relative md:absolute md:top-[600px] md:left-[5%] flex flex-col items-center md:items-start z-20">
                 <p className="font-helvetica text-lg md:text-xl text-black leading-relaxed max-w-[320px] mb-4 md:absolute md:-top-24 md:-left-10 text-center md:text-left font-medium">
-                    The game truly kicked off in the most unexpected way. Esther needed a document... and called out "Innocent's name" in a group chat that rarely saw his presence.
+                    Esther got posted to the same school, asked about the school and someone referred her to Innocent.
                 </p>
                 <div className="relative w-[85vw] max-w-[22rem] md:w-[22rem]">
                     <img
